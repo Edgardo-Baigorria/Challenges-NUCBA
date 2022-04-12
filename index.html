@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Edgardo Baigorria - Login</title>
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <div id="contenido" class="contenido">
+                <span class="boton" onclick="cerraranuncio('contenido')"><img class="cerrar" src="img/cerrar.svg" alt="cerrar"></span>
+                <img class="avatar" src="img/avatar.svg" alt="avatar">
+                <h2>INICIAR SESIÓN</h2>
+                <form action="">
+                    <div class="inputs">
+                        <input type="text" name="usuario" id="usuario" placeholder="Usuario" required>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                    </div>
+                    <input type="submit" value="ENTRAR">
+                    <a href="img/coraje.jpg" target="blank">olvidé mi contraseña</a>
+                </form>
+
+             </div>
+        </div>
+    </main>
+    
+</body>
+<script>
+    var cerraranuncio = contenido => {
+  document.getElementById(contenido).style.display = "none";
+}
+</script>
+</html>
